@@ -56,7 +56,8 @@
                         <!-- Projects link -->
                         <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                             <a class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none lg:px-2 "
-                                href="#" data-te-nav-link-ref>Kontak</a>
+                                href="#" onclick="scrollToKontak()" id="nav-kontak"
+                                data-te-nav-link-ref>Kontak</a>
                         </li>
                     </ul>
                 </div>
@@ -84,6 +85,7 @@
                 </div>
             </div>
         </div>
+        {{-- Content --}}
         <div class="container mx-auto min-h-screen">
             <div class="flex justify-center pt-20 pb-28" id="destinasi">
                 <h1 class="uppercase text-4xl">Destinasi</h1>
@@ -351,10 +353,42 @@
                     </div>
                 </section>
             </div>
+            <span class="flex justify-center pt-10 pb-10 font-bold text-4xl">Butuh Bantuan?</span>
+            <div class="grid grid-cols-12" id="kontak">
+                <div class="col-span-12 lg:col-span-7 flex flex-col justify-center items-center ">
+                    <h2 class="text-3xl font-semibold mb-4">Hubungi Kami Sekarang</h2>
+                    <div class="px-8 py-6 border rounded-lg shadow-lg w-full">
+                        <form action="">
+                            <div class="mb-4">
+                                <label for="nama" class="block text-sm font-medium text-gray-700">Nama</label>
+                                <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda"
+                                    class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" name="email" id="email"
+                                    placeholder="Masukkan Email Anda"
+                                    class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300">
+                            </div>
+                            <div class="mb-4">
+                                <label for="pesan" class="block text-sm font-medium text-gray-700">Masukkan
+                                    Pesan</label>
+                                <textarea name="pesan" id="pesan" cols="30" rows="5"
+                                    class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-5">
+                    <img src="{{ asset('image/contactus.jpg') }}" alt="Kontak Kami" class="w-full h-auto">
+                </div>
+            </div>
         </div>
         <!-- Footer container -->
         <footer
-            class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left pt-10 hidden lg:block">
+            class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left pt-10 ">
             <div
                 class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
                 <div class="mr-12 hidden lg:block">
@@ -419,48 +453,25 @@
                                 <path
                                     d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
                             </svg>
-                            Tailwind ELEMENTS
+                            Travelin Aja Yuk
                         </h6>
                         <p>
-                            Here you can use rows and columns to organize your footer
-                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
+                            Penyedia jasa travel murah dan terpercaya di indonesia
                         </p>
                     </div>
                     <!-- Products section -->
                     <div class="">
                         <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-                            Products
+                            Wisata
                         </h6>
                         <p class="mb-4">
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Angular</a>
+                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Pantai</a>
                         </p>
                         <p class="mb-4">
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">React</a>
+                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Gunung</a>
                         </p>
                         <p class="mb-4">
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Vue</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Laravel</a>
-                        </p>
-                    </div>
-                    <!-- Useful links section -->
-                    <div class="">
-                        <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-                            Useful links
-                        </h6>
-                        <p class="mb-4">
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Pricing</a>
-                        </p>
-                        <p class="mb-4">
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Settings</a>
-                        </p>
-                        <p class="mb-4">
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Help</a>
+                            <a href="#!" class="text-neutral-600 dark:text-neutral-200">Kota</a>
                         </p>
                     </div>
                     <!-- Contact section -->
@@ -476,7 +487,7 @@
                                 <path
                                     d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
                             </svg>
-                            New York, NY 10012, US
+                            Yogyakarta, Kota Gede, 2023
                         </p>
                         <p class="mb-4 flex items-center justify-center md:justify-start">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -535,6 +546,13 @@
             hargaElement.scrollIntoView({
                 behavior: "smooth"
             });
+        }
+
+        function scrollToKontak() {
+            const kontakElement = document.getElementById("kontak");
+            kontakElement.scrollIntoView({
+                behavior: "smooth"
+            })
         }
     </script>
 </body>
