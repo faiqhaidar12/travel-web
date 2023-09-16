@@ -87,86 +87,111 @@
         </div>
         {{-- Content --}}
         <div class="container mx-auto min-h-screen">
-            <div class="flex justify-center pt-20 pb-28" id="destinasi">
-                <h1 class="uppercase text-4xl">Destinasi</h1>
-            </div>
-            <div class="grid-cols-1 sm:grid md:grid-cols-3 ">
-                <div
-                    class="mx-3 mt-6 transition duration-300 ease-in-out hover:scale-110 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img class="rounded-t-lg " src="{{ asset('image/bandung.jpg') }}" alt="Skyscrapers" />
-                    </a>
-                    <div class="p-6">
-                        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                            Bandung
-                        </h5>
-                        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                            Jelajahi pesona Kota Bandung dan nikmati petualangan yang tak terlupakan.
-                            Kami akan membantu Anda merencanakan perjalanan yang luar biasa di Bandung!
-                            Segera mulailah petualangan Anda!
-                        </p>
+            <div class="grid grid-cols-12 border-b-2">
+                <div class="col-span-12 lg:col-span-7">
+                    <div class="flex justify-center pt-20 pb-24" id="destinasi">
+                        <h1 class="uppercase text-4xl">Destinasi Unggulan Kami</h1>
                     </div>
-                    <div
-                        class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-                        <small>Last updated 3 mins ago</small>
+                    <div class="grid-cols-1 sm:grid md:grid-cols-3 pb-4">
+                        <div
+                            class="mx-3 mt-6 transition duration-300 ease-in-out hover:scale-110 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+                            <a href="#!">
+                                <img class="rounded-t-lg " src="{{ asset('image/bandung.jpg') }}" alt="Skyscrapers" />
+                            </a>
+                            <div class="p-6">
+                                <h5
+                                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                    Bandung
+                                </h5>
+                                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                                    Jelajahi pesona Kota Bandung dan nikmati petualangan yang tak terlupakan.
+                                    Kami akan membantu Anda merencanakan perjalanan yang luar biasa di Bandung!
+                                    Segera mulailah petualangan Anda!
+                                </p>
+                            </div>
+                            <div
+                                class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
+                                <small>Last updated 3 mins ago</small>
+                            </div>
+                            <div class="flex justify-center pb-4">
+                                <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                                    class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="mx-3 mt-6 transition duration-300 ease-in-out hover:scale-110 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+                            <a href="#!">
+                                <img class="rounded-t-lg " src="{{ asset('image/bali.jpg') }}"
+                                    alt="Los Angeles Skyscrapers" />
+                            </a>
+                            <div class="p-6">
+                                <h5
+                                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                    Bali
+                                </h5>
+                                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                                    Jelajahi keindahan Pulau Bali dan nikmati petualangan yang tak terlupakan.
+                                    Kami akan membantu Anda merencanakan perjalanan yang luar biasa di Bali!
+                                    Segera mulailah petualangan Anda!
+                                </p>
+                            </div>
+                            <div
+                                class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
+                                <small>Last updated 3 mins ago</small>
+                            </div>
+                            <div class="flex justify-center pb-4">
+                                <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                                    class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="mx-3 mt-6 transition duration-300 ease-in-out hover:scale-110 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+                            <a href="#!">
+                                <img class="rounded-t-lg " src="{{ asset('image/yogyakarta.jpg') }}"
+                                    alt="Palm Springs Road" />
+                            </a>
+                            <div class="p-6">
+                                <h5
+                                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                    Yogyakarta
+                                </h5>
+                                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                                    Jelajahi keindahan Kota Yogyakarta dan nikmati petualangan yang tak terlupakan.
+                                    Kami akan membantu Anda merencanakan perjalanan yang luar biasa di Yogyakarta!
+                                    Segera mulailah petualangan Anda!
+                                </p>
+                            </div>
+                            <div
+                                class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
+                                <small>Last updated 3 mins ago</small>
+                            </div>
+                            <div class="flex justify-center pb-4">
+                                <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                                    class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex justify-center pb-4">
+                    <div class="flex justify-center pt-4 pb-4">
                         <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                            Pesan Sekarang
+                            class="inline-block rounded bg-blue-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                            Lihat Semua
                         </button>
                     </div>
                 </div>
-                <div
-                    class="mx-3 mt-6 transition duration-300 ease-in-out hover:scale-110 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img class="rounded-t-lg " src="{{ asset('image/bali.jpg') }}" alt="Los Angeles Skyscrapers" />
-                    </a>
-                    <div class="p-6">
-                        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                            Bali
-                        </h5>
-                        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                            Jelajahi keindahan Pulau Bali dan nikmati petualangan yang tak terlupakan.
-                            Kami akan membantu Anda merencanakan perjalanan yang luar biasa di Bali!
-                            Segera mulailah petualangan Anda!
-                        </p>
+                <div class="col-span-12 lg:col-span-5">
+                    <div class="flex justify-center pt-20">
+                        <h1 class="uppercase text-4xl">Binggung Pilih Tujuan Wisatamu?</h1>
                     </div>
-                    <div
-                        class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-                        <small>Last updated 3 mins ago</small>
-                    </div>
-                    <div class="flex justify-center pb-4">
-                        <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                            Pesan Sekarang
-                        </button>
-                    </div>
-                </div>
-                <div
-                    class="mx-3 mt-6 transition duration-300 ease-in-out hover:scale-110 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img class="rounded-t-lg " src="{{ asset('image/yogyakarta.jpg') }}" alt="Palm Springs Road" />
-                    </a>
-                    <div class="p-6">
-                        <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                            Yogyakarta
-                        </h5>
-                        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                            Jelajahi keindahan Kota Yogyakarta dan nikmati petualangan yang tak terlupakan.
-                            Kami akan membantu Anda merencanakan perjalanan yang luar biasa di Yogyakarta!
-                            Segera mulailah petualangan Anda!
-                        </p>
-                    </div>
-                    <div
-                        class="mt-auto border-t-2 border-neutral-100 px-6 py-3 text-center dark:border-neutral-600 dark:text-neutral-50">
-                        <small>Last updated 3 mins ago</small>
-                    </div>
-                    <div class="flex justify-center pb-4">
-                        <button type="button" data-te-ripple-init data-te-ripple-color="light"
-                            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                            Pesan Sekarang
-                        </button>
+                    <img src="{{ asset('image/holiday2.svg') }}" class="" alt="">
+                    <div class="flex justify-center pt-20">
+                        <span class="text-2xl">Jangan Khawatir, Langsung Saja Klik Kontak! Kami Siap Membantu
+                            Anda</span>
                     </div>
                 </div>
             </div>
@@ -292,8 +317,10 @@
                                             <path
                                                 d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                                         </svg>
-                                        Saya sangat senang dengan perjalanan yang luar biasa ini! Destinasi yang indah,
-                                        pemandu wisata yang ramah, dan akomodasi yang nyaman membuat pengalaman saya tak
+                                        Saya sangat senang dengan perjalanan yang luar biasa ini! Destinasi yang
+                                        indah,
+                                        pemandu wisata yang ramah, dan akomodasi yang nyaman membuat pengalaman saya
+                                        tak
                                         terlupakan. Terima kasih atas layanan yang luar biasa!
                                     </p>
                                 </div>
@@ -317,8 +344,10 @@
                                             <path
                                                 d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                                         </svg>
-                                        Saya sangat terkesan dengan layanan perjalanan ini. Semua detail telah diatur
-                                        dengan baik, dan pemandu wisata kami sangat berpengetahuan dan ramah. Ini adalah
+                                        Saya sangat terkesan dengan layanan perjalanan ini. Semua detail telah
+                                        diatur
+                                        dengan baik, dan pemandu wisata kami sangat berpengetahuan dan ramah. Ini
+                                        adalah
                                         pengalaman perjalanan yang luar biasa!
                                     </p>
                                 </div>
